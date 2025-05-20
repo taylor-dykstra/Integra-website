@@ -1,5 +1,5 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
+const slides = document.querySelectorAll('.carousel-item');
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.toggle('active', i === index);
