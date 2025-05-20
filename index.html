@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" style="background-image: url('images/hero-bg.jpg');">
+    <div class="overlay"></div>
     <div class="hero-content">
       <h1>Custom Machine Design & Engineering Solutions</h1>
       <p>From concept to CAD — we help manufacturers bring automation ideas to life.</p>
@@ -21,7 +22,12 @@
     <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
+  <main class="content">
+    <section class="carousel">
+      <img src="images/slide1.jpg" class="carousel-slide active" />
+      <img src="images/slide2.jpg" class="carousel-slide" />
+      <img src="images/slide3.jpg" class="carousel-slide" />
+    </section>
     <section>
       <h2>About Integra</h2>
       <p>
@@ -43,5 +49,6 @@
   <footer>
     <p>&copy; 2025 Integra Engineering Solutions — A Division of WeBuyControls.com</p>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>

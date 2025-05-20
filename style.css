@@ -1,59 +1,75 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
 header.hero {
-    background: #003366;
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
 }
 .cta-button {
-    background: #ff6600;
-    color: #fff;
-    padding: 0.75em 1.5em;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+  background: #ff6600;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
 }
 nav {
-    background: #222;
-    text-align: center;
-    padding: 1em;
+  background: #222;
+  text-align: center;
+  padding: 1rem;
 }
 nav a {
-    color: white;
-    margin: 0 1em;
-    text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+main.content {
+  padding: 2rem 5vw;
+  max-width: 1200px;
+  margin: auto;
 }
 footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 1em;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
-.contact-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 2rem;
+  position: relative;
 }
-.contact-form input,
-.contact-form textarea {
-    margin-bottom: 1em;
-    padding: 0.75em;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.carousel-slide {
+  display: none;
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
 }
-.contact-form button {
-    background: #003366;
-    color: white;
-    padding: 0.75em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.carousel-slide.active {
+  display: block;
 }
