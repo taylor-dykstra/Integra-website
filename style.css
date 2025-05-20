@@ -173,3 +173,21 @@ footer {
 .contact-cta:hover {
   background-color: #b34700;
 }
+
+/* Brand Logos Styling */
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.brand-logos img {
+  height: 60px;
+  object-fit: contain;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
