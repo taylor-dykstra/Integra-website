@@ -43,7 +43,7 @@ nav {
   padding: 0.5rem 2rem;
 }
 .nav-logo img {
-  height: 50px;
+  height: 150px;
   max-width: 100%;
 }
 .nav-links a {
@@ -95,5 +95,5 @@ footer {
   flex-wrap: wrap;
 }
 .footer-content img.logo-bottom-left {
-  height: 40px;
+  height: 100px;
 }
