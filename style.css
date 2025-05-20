@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4;
@@ -8,69 +8,52 @@ body {
 header.hero {
     background: #003366;
     color: white;
-    text-align: center;
     padding: 4rem 2rem;
+    text-align: center;
 }
 .cta-button {
     background: #ff6600;
     color: #fff;
-    padding: 1em 2em;
+    padding: 0.75em 1.5em;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 nav {
     background: #222;
-    color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
 }
 nav a {
-    color: #fff;
-    margin: 0 1rem;
+    color: white;
+    margin: 0 1em;
     text-decoration: none;
-}
-main {
-    padding: 2rem;
 }
 footer {
     background: #003366;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
 }
-form {
+.contact-form {
     max-width: 600px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
-form input, form textarea {
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    font-size: 1rem;
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1em;
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-form button {
+.contact-form button {
     background: #003366;
     color: white;
-    padding: 0.75rem;
+    padding: 0.75em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-.portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.item {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    flex: 1 1 calc(33.333% - 1rem);
-}
-@media (max-width: 768px) {
-    .portfolio-items {
-        flex-direction: column;
-    }
 }
