@@ -10,9 +10,6 @@
 <body>
   <header class="hero" style="background-image: url('images/hero-bg.jpg');">
     <div class="overlay"></div>
-    <div class="logo-top-left">
-      <img src="images/logo.png" alt="Integra Logo" />
-    </div>
     <div class="hero-content">
       <h1>Custom Machine Design & Engineering Solutions</h1>
       <p>From concept to CAD — we help manufacturers bring automation ideas to life.</p>
@@ -20,34 +17,41 @@
     </div>
   </header>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-logo">
+      <img src="images/logo.png" alt="Integra Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
-  <main class="content">
-    <section class="carousel">
+  <main class="content layout-split">
+    <div class="main-text">
+      <section>
+        <h2>About Integra</h2>
+        <p>
+          Integra Engineering Solutions is a West Michigan-based engineering firm specializing in mechanical design,
+          industrial automation, and SolidWorks modeling. We serve machine builders, integrators, and manufacturers
+          who need expert help without the overhead.
+        </p>
+      </section>
+      <section>
+        <h2>Core Capabilities</h2>
+        <ul>
+          <li>Custom machine & fixture design</li>
+          <li>Mechanical CAD modeling (SolidWorks)</li>
+          <li>Reverse engineering / 3D scanning</li>
+          <li>On-site or remote collaboration</li>
+        </ul>
+      </section>
+    </div>
+    <div class="carousel">
       <img src="images/slide1.jpg" class="carousel-slide active" />
       <img src="images/slide2.jpg" class="carousel-slide" />
       <img src="images/slide3.jpg" class="carousel-slide" />
-    </section>
-    <section>
-      <h2>About Integra</h2>
-      <p>
-        Integra Engineering Solutions is a West Michigan-based engineering firm specializing in mechanical design,
-        industrial automation, and SolidWorks modeling. We serve machine builders, integrators, and manufacturers
-        who need expert help without the overhead.
-      </p>
-    </section>
-    <section>
-      <h2>Core Capabilities</h2>
-      <ul>
-        <li>Custom machine & fixture design</li>
-        <li>Mechanical CAD modeling (SolidWorks)</li>
-        <li>Reverse engineering / 3D scanning</li>
-        <li>On-site or remote collaboration</li>
-      </ul>
-    </section>
+    </div>
   </main>
   <footer>
     <div class="footer-content">

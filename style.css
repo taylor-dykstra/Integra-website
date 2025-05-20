@@ -25,15 +25,6 @@ header.hero {
   max-width: 700px;
   margin: auto;
 }
-.logo-top-left {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 3;
-}
-.logo-top-left img {
-  height: 150px;
-}
 .cta-button {
   background: #ff6600;
   color: white;
@@ -45,10 +36,16 @@ header.hero {
 }
 nav {
   background: #222;
-  text-align: center;
-  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
 }
-nav a {
+.nav-logo img {
+  height: 80px;
+}
+.nav-links a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
@@ -57,6 +54,31 @@ main.content {
   padding: 2rem 5vw;
   max-width: 1200px;
   margin: auto;
+}
+.layout-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main-text {
+  flex: 1 1 60%;
+}
+.carousel {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 300px;
+}
+.carousel-slide {
+  display: none;
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.carousel-slide.active {
+  display: block;
 }
 footer {
   background: #e6e6e6;
@@ -72,23 +94,5 @@ footer {
   flex-wrap: wrap;
 }
 .footer-content img.logo-bottom-left {
-  height: 120px;
-}
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 300px;
-  margin-bottom: 2rem;
-  position: relative;
-}
-.carousel-slide {
-  display: none;
-  max-height: 300px;
-  max-width: 100%;
-  object-fit: contain;
-}
-.carousel-slide.active {
-  display: block;
+  height: 40px;
 }
