@@ -32,7 +32,7 @@ header.hero {
   z-index: 3;
 }
 .logo-top-left img {
-  height: 80px;
+  height: 150px;
 }
 .cta-button {
   background: #ff6600;
@@ -72,7 +72,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer-content img.logo-bottom-left {
-  height: 60px;
+  height: 120px;
 }
 .carousel {
   display: flex;
