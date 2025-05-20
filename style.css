@@ -88,6 +88,7 @@ main.content {
   max-height: 300px;
   max-width: 100%;
   object-fit: contain;
+  border-radius: 12px; 
 }
 .carousel-slide.active {
   display: block;
