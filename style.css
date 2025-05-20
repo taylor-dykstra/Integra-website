@@ -38,10 +38,6 @@ nav {
 .nav-logo img {
   height: 60px;
 }
-.nav-logo.glowing-logo img {
-  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
-  border-radius: 5px;
-}
 .menu-toggle {
   display: none;
   background: none;
