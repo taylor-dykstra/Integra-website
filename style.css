@@ -25,6 +25,15 @@ header.hero {
   max-width: 700px;
   margin: auto;
 }
+.logo-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+.logo-top-left img {
+  height: 50px;
+}
 .cta-button {
   background: #ff6600;
   color: white;
@@ -50,10 +59,20 @@ main.content {
   margin: auto;
 }
 footer {
-  background: #003366;
-  color: white;
+  background: #e6e6e6;
+  color: #222;
   text-align: center;
   padding: 1rem;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer-content img.logo-bottom-left {
+  height: 40px;
 }
 .carousel {
   display: flex;
