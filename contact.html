@@ -3,32 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
+  <title>Contact Us - Integra Engineering Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>Contact Us</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">What We Buy</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Integra Logo" />
+      </div>
+      <button class="menu-toggle">MENU &#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="webuy.html">We Buy Surplus</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
   </nav>
-  <main>
-    <form action="https://formspree.io/f/xdkgjpqd" method="POST">
+  <main class="content">
+    <h1>Contact Us</h1>
+    <p>Have a question or want to get in touch? Fill out the form below and we’ll get back to you shortly.</p>
+    <form action="https://formspree.io/f/xdkgjpqd" method="POST" class="contact-form">
       <label>
-        Your email:
-        <input type="email" name="email" required />
+        Your Name:
+        <input type="text" name="name" required>
       </label>
       <label>
-        Your message:
-        <textarea name="message" required></textarea>
+        Your Email:
+        <input type="email" name="email" required>
       </label>
-      <button type="submit">Send</button>
+      <label>
+        Your Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
     </form>
   </main>
   <footer>
-    <p>&copy; 2025 WeBuyControls.com</p>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="Integra Logo" class="logo-bottom-left" />
+      <p>&copy; 2025 Integra Engineering Solutions</p>
+    </div>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
