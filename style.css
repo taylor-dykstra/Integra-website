@@ -77,33 +77,33 @@ main.content {
 }
 .carousel {
   flex: 1 1 35%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  max-height: 300px;
-}
-.carousel-slide {
-  display: none;
-  max-height: 300px;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 12px; 
-  display: block;
-}
-.carousel-slide.active {
-  display: block;
+  position: relative;
 }
 .carousel-item {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: none;
 }
 .carousel-item.active {
   display: block;
 }
+.carousel-slide {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
 .carousel-caption {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
