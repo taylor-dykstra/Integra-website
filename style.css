@@ -97,11 +97,9 @@ main.content {
   position: relative;
   display: none;
 }
-
 .carousel-item.active {
   display: block;
 }
-
 .carousel-caption {
   position: absolute;
   bottom: 10px;
