@@ -1,20 +1,32 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #f4f4f4;
     color: #333;
 }
-header {
+header.hero {
     background: #003366;
-    color: #fff;
-    padding: 1rem;
+    color: white;
     text-align: center;
+    padding: 4rem 2rem;
 }
-header nav a {
-    margin: 0 1rem;
+.cta-button {
+    background: #ff6600;
     color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
     text-decoration: none;
 }
 main {
@@ -22,32 +34,43 @@ main {
 }
 footer {
     background: #003366;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 form {
+    max-width: 600px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-}
-form label, form input, form textarea {
-    margin-bottom: 1rem;
 }
 form input, form textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
 }
 form button {
-    background-color: #003366;
-    color: #fff;
+    background: #003366;
+    color: white;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.item {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1 1 calc(33.333% - 1rem);
+}
+@media (max-width: 768px) {
+    .portfolio-items {
+        flex-direction: column;
+    }
 }
