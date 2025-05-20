@@ -93,6 +93,27 @@ main.content {
 .carousel-slide.active {
   display: block;
 }
+.carousel-item {
+  position: relative;
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0 0 12px 12px;
+}
 footer {
   background: #e6e6e6;
   color: #222;
