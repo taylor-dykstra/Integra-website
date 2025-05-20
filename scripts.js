@@ -12,10 +12,10 @@ function nextSlide() {
 setInterval(nextSlide, 4000);
 showSlide(currentSlide);
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav-links');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
   });
 }
