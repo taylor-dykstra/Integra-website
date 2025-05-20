@@ -1,0 +1,34 @@
+.carousel {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 300px;
+  position: relative;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
+.carousel-slide {
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 0 0 12px 12px;
+}
