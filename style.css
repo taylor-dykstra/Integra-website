@@ -46,7 +46,7 @@ header.hero {
   padding: 0.5rem 1rem;
 }
 .nav-logo img {
-  height: 150px;
+  height: 100px;
 }
 .nav-links {
   display: flex;
@@ -123,7 +123,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer-content img.logo-bottom-left {
-  height: 125px;
+  height: 80px;
 }
 @media (max-width: 768px) {
   .nav-links {
