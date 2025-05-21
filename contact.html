@@ -24,7 +24,9 @@
   <main class="content">
     <h1>Contact Us</h1>
     <p>Have a question or want to get in touch? Fill out the form below and we’ll get back to you shortly.</p>
-    <form action="https://formspree.io/f/xdkgjpqd" method="POST" class="contact-form">
+    <form action="https://formsubmit.io/send/taylor.dykstra@integra-es.com" method="POST" enctype="multipart/form-data" class="contact-form">
+      <input name="_redirect" type="hidden" value="https://integra-es.com/thank-you.html">
+
       <label>
         Your Name:
         <input type="text" name="name" required>
@@ -36,6 +38,10 @@
       <label>
         Your Message:
         <textarea name="message" rows="5" required></textarea>
+      </label>
+      <label>
+        Upload a file:
+        <input type="file" name="attachment">
       </label>
       <button type="submit">Send Message</button>
     </form>
