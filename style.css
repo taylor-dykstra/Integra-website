@@ -191,3 +191,21 @@ footer {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
+/* Checkbox-style bullet list */
+.checkbox-list {
+  list-style: none;
+  padding-left: 1rem;
+}
+.checkbox-list li {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+.checkbox-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #cc5500;
+  font-weight: bold;
+}
